@@ -1,0 +1,95 @@
+body{
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: black;
+  background-color: #F9F7F7;
+}
+
+.navigation ul, .navigation a{
+  display: flex;
+  font-weight: bold;
+  font-size: 18px;
+  list-style-type: none;
+  justify-content: center;
+  text-decoration:none;
+  margin: 20px 40px;
+  padding: 10px 70px;
+}
+
+.navigation a:hover{
+  color: #EECC5E;
+}
+
+.entrees, .sides{
+  margin: 20px 60px;
+  text-align: center;
+  border-top: 1px solid #EECC5E;
+  border-bottom: 1px solid #EECC5E;
+}
+
+.appetizers, .dessert, .drinks{
+  margin: 20px 60px;
+  padding: 10px;
+  text-align: center;
+  background-color: #EECC5E;
+  border-top: 1px solid #EECC5E;
+  border-bottom: 1px solid #EECC5E;
+  border-radius: 5px;
+}
+
+li{
+  padding:8px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+h1{
+  margin: 20px 0px;
+  text-align: center;
+}
+
+
+/* Hidden Search */
+.search{
+  position: absolute;
+  height: 50px;
+}
+
+.search .input{
+  background-color: #F9F7F7;
+  border: 0;
+  font-size: 18px;
+  padding: 15px;
+  height: 50px;
+  width: 50px;
+  transition: width 0.3s ease;
+}
+
+.btn{
+  background-color: #F9F7F7;
+  border: 0;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 70px;
+  transition: transform 0.3s ease;
+}
+
+.btn:focus, 
+.input:focus {
+  outline: none;
+}
+
+.search.active .input{
+  width: 100%;
+}
+
+.search.active .btn{
+  transform: translateX(189px);
+}
+
